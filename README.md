@@ -1,5 +1,13 @@
 # Хот хоорондын тээвэр, машинд дайгдах, дайх, хүргэлтийн үйлчилгээ
 
+## Лабораторийн ажлууд
+
+| Лаб | Материал |
+|---|---|
+| 2 | [Хэрэглэгчийн хэрэгцээ ба User Story](LAB02.md) |
+| 3 | [Product Backlog](lab3/product-backlog.md), [Sprint Backlog](lab3/sprint-backlog.md), [Sprint Goal](lab3/sprint-goal.md), [Planning Poker](lab3/planning-poker.md) |
+| 4 | [Kanban ба Lean — тайлан, самбар, хугацааны тооцоо](lab4/README.md) |
+
 ## Төслийн тухай
 
 Энэхүү төсөл нь хот дотор болон хот хооронд зорчих зорчигч, жолооч,
@@ -111,11 +119,11 @@ US-01, US-02, US-03, US-05, US-09, US-10, US-11 (нийт 29 SP)
 
 | Файл | Тайлбар |
 |------|---------|
-| [planning-poker.md](planning-poker.md) | Planning Poker үнэлгээний тэмдэглэл |
-| [product-backlog.md](product-backlog.md) | Story Point-той Product Backlog |
-| [sprint-backlog.md](sprint-backlog.md) | Sprint 1 Backlog, хүчин чадлын тооцоо, ажлын задлал |
-| [sprint-goal.md](sprint-goal.md) | Sprint Goal, амжилтын шалгуур, Done шалгуур |
-| [planitpoker.png](planitpoker.png) | Planning Poker-ийн дэлгэцийн зураг |
+| [planning-poker.md](lab3/planning-poker.md) | Planning Poker үнэлгээний тэмдэглэл |
+| [product-backlog.md](lab3/product-backlog.md) | Story Point-той Product Backlog |
+| [sprint-backlog.md](lab3/sprint-backlog.md) | Sprint 1 Backlog, хүчин чадлын тооцоо, ажлын задлал |
+| [sprint-goal.md](lab3/sprint-goal.md) | Sprint Goal, амжилтын шалгуур, Done шалгуур |
+| [planitpoker.png](lab3/planit.poker.png) | Planning Poker-ийн дэлгэцийн зураг |
 
 ## Биелэлтийн шалгуур
 
