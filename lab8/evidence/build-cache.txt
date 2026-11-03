@@ -1,0 +1,46 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 311B 0.0s done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:22-alpine
+#2 DONE 1.7s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 125B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 4.13kB 0.0s done
+#4 DONE 0.0s
+
+#5 [1/6] FROM docker.io/library/node:22-alpine@sha256:fe4f6d74e20370acb04ad889077d14d0f64a9c8ea6a42bc60cddf1e844699914
+#5 resolve docker.io/library/node:22-alpine@sha256:fe4f6d74e20370acb04ad889077d14d0f64a9c8ea6a42bc60cddf1e844699914 0.0s done
+#5 DONE 0.0s
+
+#6 [2/6] WORKDIR /app
+#6 CACHED
+
+#7 [3/6] COPY package.json package-lock.json ./
+#7 CACHED
+
+#8 [4/6] RUN npm ci --omit=dev --ignore-scripts
+#8 CACHED
+
+#9 [5/6] COPY --chown=node:node server.js ./
+#9 CACHED
+
+#10 [6/6] COPY --chown=node:node public ./public
+#10 DONE 0.0s
+
+#11 exporting to image
+#11 exporting layers 0.1s done
+#11 exporting manifest sha256:07dccd58a12606cad0464f8d0489c3292f9e3dce2b1bd4a39bc09557057fbd62 0.0s done
+#11 exporting config sha256:93db97342f87287f6060eb09ed57eb8a01fa156e08a6fd1288c4172a680af515 0.0s done
+#11 exporting attestation manifest sha256:7c31755b1f8fd7251fe5796fad5bfae47c3f8798eaedfe13dafccbb77fddd65d 0.0s done
+#11 exporting manifest list sha256:538e70baf6b58b7b584f9297f7b2848cf3419dbfeea0fff7760a3b6d2913a920
+#11 exporting manifest list sha256:538e70baf6b58b7b584f9297f7b2848cf3419dbfeea0fff7760a3b6d2913a920 0.0s done
+#11 naming to docker.io/library/intercity-lab8:1.2 done
+#11 unpacking to docker.io/library/intercity-lab8:1.2 0.1s done
+#11 DONE 0.4s

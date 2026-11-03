@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="mn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Intercity · Lab 8</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#f4f5f1;color:#172c29;font:17px/1.6 system-ui,sans-serif}header{background:#173c35;color:white;padding:22px max(6vw,24px);display:flex;justify-content:space-between;gap:20px}header strong{letter-spacing:2px}main{max-width:1060px;margin:55px auto;padding:0 24px}.eyebrow{font-size:14px;color:#976047;font-weight:700;letter-spacing:2px}h1{font-size:clamp(32px,5vw,52px);line-height:1.2;max-width:800px;margin:16px 0}p{max-width:730px}.meta{border-top:1px solid #ccd5ce;border-bottom:1px solid #ccd5ce;padding:16px 0;display:flex;gap:28px;flex-wrap:wrap;margin:30px 0}.label{font-size:14px;color:#61756c}h2{font-size:25px}table{width:100%;border-collapse:collapse;background:white}th,td{text-align:left;padding:15px;border-bottom:1px solid #e1e6e1}th{background:#dfe9e3}.open{color:#207554;font-weight:700}.closed{color:#a14f3c}button{padding:10px 18px;background:#173c35;color:white;border:0;border-radius:5px;font:inherit;cursor:pointer}footer{margin-top:30px;color:#61756c;font-size:14px}.error{color:#a14f3c}a{color:inherit}@media(max-width:650px){header{flex-direction:column}td,th{padding:9px;font-size:14px}}</style></head>
+<body><header><strong>INTERCITY</strong><span>CS316 · Docker лаборатори 8</span></header><main>
+<div class="eyebrow">ХОТ ХООРОНДЫН ТЭЭВЭР БА ХҮРГЭЛТ</div>
+<h1>Нэг чиглэлд хамтдаа аялъя</h1>
+<p>Аяллын боломжит суудлыг нэг дороос харна. Энэ хувилбар нь Docker image, container болон Compose-ийн ажиллагааг үзүүлэх сургалтын апп юм.</p>
+<div class="meta"><div><span class="label">Гүйцэтгэсэн</span><br><strong>
+  Ж.Булган — B232270062<br>
+  Ж.Буянхишиг — B232270114<br>
+  Э.Бүрэнбаяр — B242270084
+</strong></div><div><span class="label">Хувилбар</span><br><strong id="version">v1.1</strong></div><div><span class="label">Нээсэн тоо</span><br><strong id="visits">Уншиж байна…</strong> <span id="storage"></span></div></div>
+<h2>Аяллын жишээ мэдээлэл</h2><table><thead><tr><th>Хаанаас</th><th>Хаашаа</th><th>Сул суудал</th><th>Төлөв</th></tr></thead><tbody id="trips"></tbody></table>
+<p><button id="refresh">Мэдээлэл шинэчлэх</button></p><p id="message" role="status"></p>
+<footer>Аяллууд нь жишээ өгөгдөл. Захиалга үүсгэхгүй. <a href="/health">Health check</a> · <a href="/api/trips">Trips API</a></footer>
+</main><script>
+async function load(){
+const msg=document.querySelector('#message');msg.textContent='';
+try{const r=await fetch('/api/trips');if(!r.ok)throw Error('Аяллын мэдээлэл уншсангүй');const trips=await r.json();const body=document.querySelector('#trips');body.replaceChildren();for(const trip of trips){const row=document.createElement('tr');for(const value of [trip.from,trip.to,trip.seats,trip.status]){const td=document.createElement('td');td.textContent=value;row.append(td)}row.lastChild.className=trip.status==='OPEN'?'open':'closed';body.append(row)}}catch(e){msg.textContent=e.message;msg.className='error'}
+try{const r=await fetch('/api/visits');if(!r.ok)throw Error('Тоолуурын өгөгдлийн сан холбогдсонгүй. Compose logs-ийг шалгана уу.');const data=await r.json();document.querySelector('#visits').textContent=data.visits;document.querySelector('#storage').textContent='('+data.storage+')'}catch(e){document.querySelector('#visits').textContent='—';msg.textContent=e.message;msg.className='error'}
+}
+document.querySelector('#refresh').addEventListener('click',load);load();
+</script></body></html>
