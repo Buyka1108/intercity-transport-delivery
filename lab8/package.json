@@ -1,0 +1,9 @@
+{
+  "name": "intercity-lab8",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CS316 Lab 8 Docker demonstration",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=22" },
+  "license": "UNLICENSED"
+}

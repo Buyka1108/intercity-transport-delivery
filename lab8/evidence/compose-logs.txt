@@ -1,0 +1,37 @@
+app-1  | Intercity Lab 8 listening on 0.0.0.0:3000
+app-1  | 2026-11-03T04:46:14.565Z GET /health
+app-1  | 2026-11-03T04:46:24.839Z GET /health
+app-1  | 2026-11-03T04:46:35.113Z GET /health
+app-1  | 2026-11-03T04:46:45.394Z GET /health
+app-1  | 2026-11-03T04:46:55.662Z GET /health
+app-1  | 2026-11-03T04:47:05.958Z GET /health
+app-1  | 2026-11-03T04:47:08.103Z GET /
+app-1  | 2026-11-03T04:47:08.188Z GET /api/trips
+app-1  | 2026-11-03T04:47:08.289Z GET /api/visits
+app-1  | 2026-11-03T04:47:16.422Z GET /health
+app-1    | 2026-11-03T04:47:26.758Z GET /health
+app-1    | 2026-11-03T04:47:37.028Z GET /health
+app-1    | 2026-11-03T04:47:47.320Z GET /health
+redis-1  | 1:C 03 Nov 2026 04:45:58.396 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1  | 1:C 03 Nov 2026 04:45:58.396 * Redis version=7.4.12, bits=64, commit=00000000, modified=0, pid=1, just started
+app-1    | 2026-11-03T04:47:57.622Z GET /health
+redis-1  | 1:C 03 Nov 2026 04:45:58.396 * Configuration loaded
+redis-1  | 1:M 03 Nov 2026 04:45:58.397 * monotonic clock: POSIX clock_gettime
+app-1    | 2026-11-03T04:48:08.066Z GET /health
+app-1    | 2026-11-03T04:48:18.343Z GET /health
+app-1    | 2026-11-03T04:48:28.664Z GET /health
+redis-1  | 1:M 03 Nov 2026 04:45:58.399 * Running mode=standalone, port=6379.
+redis-1  | 1:M 03 Nov 2026 04:45:58.400 * Server initialized
+redis-1  | 1:M 03 Nov 2026 04:45:58.405 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+app-1    | 2026-11-03T04:48:38.975Z GET /health
+app-1    | 2026-11-03T04:48:49.251Z GET /health
+redis-1  | 1:M 03 Nov 2026 04:45:58.411 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+redis-1  | 1:M 03 Nov 2026 04:45:58.411 * Ready to accept connections tcp
+app-1    | 2026-11-03T04:48:59.518Z GET /health
+app-1    | 2026-11-03T04:49:09.905Z GET /health
+app-1    | 2026-11-03T04:49:20.177Z GET /health
+app-1    | 2026-11-03T04:49:30.381Z GET /health
+app-1    | 2026-11-03T04:49:40.637Z GET /health
+app-1    | 2026-11-03T04:49:50.937Z GET /health
+app-1    | 2026-11-03T04:50:01.199Z GET /health
+app-1    | 2026-11-03T04:50:11.516Z GET /health
