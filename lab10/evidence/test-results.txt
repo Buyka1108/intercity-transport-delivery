@@ -1,0 +1,33 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-8.4.2, pluggy-1.6.0 -- C:\Users\zolbi\AppData\Local\Programs\Python\Python312\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\zolbi\intercity-transport-delivery
+plugins: Faker-40.21.0, django-4.9.0
+collecting ... collected 24 items
+
+lab6/tests/test_booking_base.py::SharedRules::test_invalid_capacity PASSED [  4%]
+lab6/tests/test_booking_base.py::SharedRules::test_invalid_seat_types PASSED [  8%]
+lab6/tests/test_booking_base.py::SharedRules::test_invalid_status_type PASSED [ 12%]
+lab6/tests/test_booking_base.py::SharedRules::test_over_capacity PASSED  [ 16%]
+lab6/tests/test_booking_base.py::SharedRules::test_valid_request PASSED  [ 20%]
+lab6/tests/test_combined_policy.py::CombinedPolicy::test_cancelled_negative_seats_rejected PASSED [ 25%]
+lab6/tests/test_combined_policy.py::CombinedPolicy::test_closed_positive_seats_rejected PASSED [ 29%]
+lab6/tests/test_combined_policy.py::CombinedPolicy::test_open_exact_capacity_accepted PASSED [ 33%]
+lab6/tests/test_combined_policy.py::CombinedPolicy::test_open_zero_seats_rejected PASSED [ 37%]
+lab6/tests/test_seat_validation.py::SeatValidation::test_exact_capacity_accepted PASSED [ 41%]
+lab6/tests/test_seat_validation.py::SeatValidation::test_negative_seats_rejected PASSED [ 45%]
+lab6/tests/test_seat_validation.py::SeatValidation::test_no_available_seats PASSED [ 50%]
+lab6/tests/test_seat_validation.py::SeatValidation::test_one_seat_over_capacity PASSED [ 54%]
+lab6/tests/test_seat_validation.py::SeatValidation::test_zero_seats_rejected PASSED [ 58%]
+lab6/tests/test_trip_status.py::TripStatus::test_cancelled_trip_rejected PASSED [ 62%]
+lab6/tests/test_trip_status.py::TripStatus::test_closed_trip_rejected PASSED [ 66%]
+lab6/tests/test_trip_status.py::TripStatus::test_open_trip_accepted PASSED [ 70%]
+lab6/tests/test_trip_status.py::TripStatus::test_unknown_status_rejected PASSED [ 75%]
+lab10/tests/test_booking.py::test_open_trip_with_one_seat_is_allowed PASSED [ 79%]
+lab10/tests/test_booking.py::test_open_trip_with_multiple_seats_is_allowed PASSED [ 83%]
+lab10/tests/test_booking.py::test_zero_requested_seats_is_rejected PASSED [ 87%]
+lab10/tests/test_booking.py::test_request_equal_to_capacity_is_allowed PASSED [ 91%]
+lab10/tests/test_booking.py::test_request_one_over_capacity_is_rejected PASSED [ 95%]
+lab10/tests/test_booking.py::test_closed_trip_is_rejected PASSED         [100%]
+
+============================= 24 passed in 0.12s ==============================
