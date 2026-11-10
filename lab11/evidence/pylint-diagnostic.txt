@@ -1,0 +1,16 @@
+************* Module booking
+lab6\booking.py:10:7: C0123: Use isinstance() rather than type() for a typecheck. (unidiomatic-typecheck)
+lab6\booking.py:10:38: C0123: Use isinstance() rather than type() for a typecheck. (unidiomatic-typecheck)
+************* Module test_booking
+lab10\tests\test_booking.py:67:0: C0304: Final newline missing (missing-final-newline)
+lab10\tests\test_booking.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+lab10\tests\test_booking.py:4:0: C0116: Missing function or method docstring (missing-function-docstring)
+lab10\tests\test_booking.py:15:0: C0116: Missing function or method docstring (missing-function-docstring)
+lab10\tests\test_booking.py:26:0: C0116: Missing function or method docstring (missing-function-docstring)
+lab10\tests\test_booking.py:37:0: C0116: Missing function or method docstring (missing-function-docstring)
+lab10\tests\test_booking.py:48:0: C0116: Missing function or method docstring (missing-function-docstring)
+lab10\tests\test_booking.py:59:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 6.77/10 (previous run: 0.00/10, +6.77)
+
