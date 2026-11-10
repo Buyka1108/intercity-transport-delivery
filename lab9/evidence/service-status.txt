@@ -1,0 +1,2 @@
+NAME                TYPE       CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
+intercity-service   NodePort   10.106.159.135   <none>        80:30080/TCP   6m9s

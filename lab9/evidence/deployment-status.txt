@@ -1,0 +1,2 @@
+NAME            READY   UP-TO-DATE   AVAILABLE   AGE
+intercity-app   3/3     3            3           6m12s
