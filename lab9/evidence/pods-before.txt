@@ -1,0 +1,4 @@
+NAME                             READY   STATUS    RESTARTS   AGE
+intercity-app-6d69d9f8f5-b45rp   1/1     Running   0          66s
+intercity-app-6d69d9f8f5-fmlq8   1/1     Running   0          66s
+intercity-app-6d69d9f8f5-rwqsw   1/1     Running   0          66s

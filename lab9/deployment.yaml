@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: intercity-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: intercity-app
+  template:
+    metadata:
+      labels:
+        app: intercity-app
+    spec:
+      containers:
+        - name: app
+          image: intercity-lab9:1.0
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 3000
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 3000
+            initialDelaySeconds: 2
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 3000
+            initialDelaySeconds: 10
+            periodSeconds: 10
