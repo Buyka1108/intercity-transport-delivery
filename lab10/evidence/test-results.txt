@@ -1,7 +1,7 @@
 ============================= test session starts =============================
-platform win32 -- Python 3.12.10, pytest-8.4.2, pluggy-1.6.0 -- C:\Users\zolbi\AppData\Local\Programs\Python\Python312\python.exe
+platform win32 -- Python 3.12.10, pytest-8.4.2, pluggy-1.6.0 -- [USER_HOME]\AppData\Local\Programs\Python\Python312\python.exe
 cachedir: .pytest_cache
-rootdir: C:\Users\zolbi\intercity-transport-delivery
+rootdir: [PROJECT_ROOT]
 plugins: Faker-40.21.0, django-4.9.0
 collecting ... collected 24 items
 
