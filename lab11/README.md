@@ -291,10 +291,11 @@ npm --prefix lab8 audit --audit-level=low
 ```
 
 
+### CI-ийн үр дүн
 
-CI дээр ажилласан үр дүнг pull request-ийн Checks хэсгээс баталгаажуулна.
+PR #24-ийн push болон pull_request шалгалтууд амжилттай дууссан.
 
-
+![CI шалгалтын амжилттай үр дүн](evidence/ci-success.png)
 
 \## 10. Дүгнэлт
 
