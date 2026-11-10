@@ -1,7 +1,10 @@
+"""AAA tests for the Intercity booking policy."""
+
 from lab6.booking import booking_allowed
 
 
 def test_open_trip_with_one_seat_is_allowed():
+    'Allow one seat on an open trip.'
     # Arrange: Нээлттэй аялалд гурван сул суудал байна.
     requested, available, status = 1, 3, "OPEN"
 
@@ -13,6 +16,7 @@ def test_open_trip_with_one_seat_is_allowed():
 
 
 def test_open_trip_with_multiple_seats_is_allowed():
+    'Allow multiple seats within capacity.'
     # Arrange
     requested, available, status = 2, 5, "OPEN"
 
@@ -24,6 +28,7 @@ def test_open_trip_with_multiple_seats_is_allowed():
 
 
 def test_zero_requested_seats_is_rejected():
+    'Reject a request for zero seats.'
     # Arrange: Зөвшөөрөгдөх доод хязгаараас бага утга.
     requested, available, status = 0, 3, "OPEN"
 
@@ -35,6 +40,7 @@ def test_zero_requested_seats_is_rejected():
 
 
 def test_request_equal_to_capacity_is_allowed():
+    'Allow a request exactly at capacity.'
     # Arrange: Хүссэн суудал сул суудлын тоотой тэнцүү.
     requested, available, status = 3, 3, "OPEN"
 
@@ -46,6 +52,7 @@ def test_request_equal_to_capacity_is_allowed():
 
 
 def test_request_one_over_capacity_is_rejected():
+    'Reject a request above capacity.'
     # Arrange
     requested, available, status = 4, 3, "OPEN"
 
@@ -57,6 +64,7 @@ def test_request_one_over_capacity_is_rejected():
 
 
 def test_closed_trip_is_rejected():
+    'Reject a request for a closed trip.'
     # Arrange: Суудал хүрэлцээтэй ч аялал хаалттай.
     requested, available, status = 1, 3, "CLOSED"
 

@@ -18,8 +18,20 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install dependencies
-        run: python -m pip install -r lab7/requirements.txt
+      - name: Install Python dependencies
+        run: python -m pip install -r lab7/requirements.txt -r lab11/requirements.txt
 
       - name: Run tests
         run: python -m pytest lab6/tests lab10/tests -v
+
+      - name: Run Pylint
+        run: python -m pylint --init-hook="import sys; sys.path.insert(0, '.')" lab6/booking.py lab10/tests/test_booking.py
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Audit npm dependencies
+        working-directory: lab8
+        run: npm audit --audit-level=low
